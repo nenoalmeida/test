@@ -10,10 +10,30 @@
 <!-- action - where the form send data to -->
 <!-- method - what HTTP method (get/post) -->
 
+<!-- First form -->
 <form>
-	<input type="text" placeholder="username@username.com"></input>
-	<input type="password" placeholder="password"></input>
+	<label> 
+		Username:
+		<input name="username" type="text" placeholder="username@username.com"></input>
+	</label>
+	
+	<label>
+		Password:
+		<input name="password" type="password" placeholder="password"></input>	
 	<input type="Submit"></input>
+	</label>
+	
+	<!-- Secound form-->
+	<p>
+		<form action="http://www.wikipedia.org">
+		<label for="email">Username:</label>
+		<input id="email" type="email" placeholder="username@username.com" required="email"></input>
+			
+		<label for="password"> Password:</label>
+		<input id="password" type="password" placeholder="password" required=""></input>	
+		<input type="Submit"></input>				
+	</p>
+	
 </form>
 </body>
 </html>
